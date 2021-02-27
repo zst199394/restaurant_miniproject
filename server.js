@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
@@ -34,11 +34,12 @@ app.get('/api/waitlist', function(req, res) {
 app.post('/api/tables', function(req, res) {
     if (tables.length < 5) {
         tables.push(req.body);
-        res.send(true);
+        res.send("tables");
     } else {
         waitlist.push(req.body)
-        res.send(false);
+        res.send("waitlist");
     }
+
 })
 
 app.listen(PORT, function() {
