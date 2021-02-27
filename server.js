@@ -34,12 +34,11 @@ app.get('/api/waitlist', function(req, res) {
 app.post('/api/tables', function(req, res) {
     if (tables.length < 5) {
         tables.push(req.body);
-        res.send("tables");
+        res.send(true);
     } else {
         waitlist.push(req.body)
-        res.send("waitlist");
+        res.send(false);
     }
-
 })
 
 app.listen(PORT, function() {
