@@ -1,0 +1,23 @@
+{
+  "name": "restauraunt_miniproject",
+  "version": "1.0.0",
+  "description": "A restauraunt app to take reservations and set tables and waiting list.",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zst199394/restaurant_miniproject.git"
+  },
+  "author": "Nick Podniestrzas, Shu-ting Z, Matt Pirmal, Richie Roman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zst199394/restaurant_miniproject/issues"
+  },
+  "homepage": "https://github.com/zst199394/restaurant_miniproject#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
